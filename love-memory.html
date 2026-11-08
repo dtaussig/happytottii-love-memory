@@ -80,4 +80,8 @@ function playMozart(){
 }
 function celebrate(){const el=$('celebrate');el.replaceChildren();const colors=['#f22','#f5a','#ffc65e','#e89ab8','#ffecb2'];for(let k=0;k<5;k++){const x=15+Math.random()*70,y=12+Math.random()*45;for(let j=0;j<28;j++){const a=j/28*Math.PI*2,r=45+Math.random()*110,s=document.createElement('i');s.className='spark';s.style.left=x+'%';s.style.top=y+'%';s.style.background=colors[j%colors.length];s.style.setProperty('--dx',Math.cos(a)*r+'px');s.style.setProperty('--dy',Math.sin(a)*r+'px');s.style.animationDelay=k*.18+'s';el.append(s)}}for(let i=0;i<18;i++){let h=document.createElement('span');h.className='float-heart';h.textContent=i%3?'♥':'❤';h.style.color=colors[i%colors.length];h.style.left=(5+Math.random()*90)+'%';h.style.top=(70+Math.random()*25)+'%';h.style.animationDelay=Math.random()*.6+'s';el.append(h)}setTimeout(()=>el.replaceChildren(),3600)}
 $('restart').onclick=()=>start(level);$('next').onclick=()=>start(level+1);start(0);
-</script></body></html>
+</script>
+<a href="https://games.happytottii.com/" style="display:block;text-align:center;margin:24px auto;padding:14px;font-size:18px;font-weight:bold;color:#b51f55;">
+  🏠 Zurück zu allen Spielen
+</a>
+</body></html>
